@@ -57,9 +57,32 @@ python3 tests/test_search.py
 
 ## 🤖 Agent Integration
 
+### Claude Code (MCP)
+This repo includes a native **MCP Server** implementation (compatible with Claude Desktop).
+
+1.  Add to your `claude_desktop_config.json`:
+    ```json
+    {
+      "mcpServers": {
+        "flights": {
+          "command": "/absolute/path/to/skills/flights/venv/bin/python3",
+          "args": ["/absolute/path/to/skills/flights/mcp_server.py"]
+        }
+      }
+    }
+    ```
+2.  Restart Claude Desktop. You can now ask: "Find me cheap flights to Tokyo".
+
 ### OpenClaw
 Add this repo to your skills directory and map `flight_search` to:
 `venv/bin/python3 search.py {{from}} {{to}} {{date}}`
 
-### Claude Code (MCP)
-Coming soon: MCP Server wrapper for Claude Desktop.
+## 🌟 Why is this great?
+
+Unlike traditional Flight APIs (Amadeus, Duffel, Skyscanner), this skill is:
+
+*   **Real-Time & Accurate**: It scrapes Google Flights directly, so you see the *actual* price (no cached/stale GDS data).
+*   **Zero Cost**: No API keys, no monthly subscription, no rate limits (within reason).
+*   **Lightweight**: Uses Protobuf reverse-engineering instead of heavy browser automation (Playwright/Selenium), making it 10x faster and resource-efficient.
+*   **Privacy-Friendly**: Runs locally on your machine.
+
