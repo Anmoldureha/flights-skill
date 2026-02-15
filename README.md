@@ -97,3 +97,8 @@ Google discontinued their public Flights API in 2018. Developers have been force
 ### 3. 🛡️ Local & Private
 Runs 100% on your machine (or your agent's container). No third-party server logging your travel plans or selling your search intent data to airlines.
 
+## 🙏 Credits
+
+This skill is a wrapper around the brilliant **[fast-flights](https://github.com/AWeirdDev/flights)** library by **AWeirdDev**.
+They did the heavy lifting of reverse-engineering Google's Protobuf format. Go star their repo! ⭐
+
