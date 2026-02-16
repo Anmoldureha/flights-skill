@@ -1,4 +1,4 @@
-# Free Google Flights API (MCP Server) ✈️
+# Free Google Flights API (MCP Server & OpenClaw Skill) ✈️
 
 **The only free, real-time Google Flights API wrapper for AI Agents, Claude, and Python.**
 
