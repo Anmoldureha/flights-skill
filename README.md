@@ -1,6 +1,10 @@
-# ✈️ Flights Skill for OpenClaw/Claude
+# Free Google Flights API (MCP Server) ✈️
 
-A powerful, Python-based flight search tool wrapping the [fast-flights](https://github.com/AWeirdDev/flights) library. Designed to be used as an Agent Skill (OpenClaw) or MCP Server.
+**The only free, real-time Google Flights API wrapper for AI Agents, Claude, and Python.**
+
+> ⭐️ **Star this repo** if you hate enterprise API pricing.
+
+This tool wraps the [fast-flights](https://github.com/AWeirdDev/flights) library to provide a clean **JSON API** for flight data. No API keys, no Selenium bloat, just raw Protobuf decoding.
 
 ## 🚀 Features
 - **Real-time Google Flights Data**: Scrapes live prices via Protobuf reverse-engineering.
